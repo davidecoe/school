@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoderDojo Beginning Web Workshop</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <h1>Welcome to the CoderDojo Web Workshop!</h1>
+
+    <p>In these sessions, we will be learning to make websites using <b><a href="#html">HTML</a></b> and <b><a href="#css">CSS</a></b>. No previous experience is necessary, just have fun and be creative! </p>
+    <p> Today we will learn a few of the most important HTML tags.  You can use this to share your favorite book or summer activity.  REMEMBER! When you are writing information about yourself, it's smart to keep your private information private.  Don't give your full name or where you can be found.
+    </p>
+
+    <h2>
+      Set up
+    </h2>
+    <p>
+      For our meetings, we will be using mozilla.org's web editor called Thimble.  It is at <a href="https://thimble.mozilla.org">thimble.mozilla.org</a>.  You will need an account in order to save your web page you create today. If you are under 13, ask your parent to help.   
+    </p>
+    <p>To get started</p>
+    <ol>
+      <li>Go to <a href="https://thimble.mozilla.org" target="_blank">thimble.mozilla.org</a></li>
+      <li>Click on Sign Up in the upper right corner<br>(or Log In if you already created a mozilla account)</li>
+      <li>Fill in the form</li>
+      <li>After you are signed in, click <a target="new" href="https://thimble.mozilla.org/editor">"Start a project from Scratch"</a></li>
+    </ol>
+
+<h1>What is HTML?</h1>
+    <p>A web page is made up of the text you want to say, and many HTML elements, called tags, that are enclosed in angle brackets. These tags tell your web browser what to show.
+HTML, and particularly HTML5, is used to give the structure and content of the page, but not specific appearance.  (Later tonight, we'll use CSS to change how it looks.)</p>
+    <p>The paragraph below is an example of how you mark a paragraph in HTML, by surrounding it in opening <code>&lt;p&gt;</code> and closing <code>&lt;/p&gt;</code> tags.</p>
+  <pre class="padded-code"><code class="language-html">&lt;p&gt;All web pages on the internet use HTML!&lt;/p&gt;
+</code></pre>
+<h3>Example - A Web Page About My Favorite Season</h3>
+  <p>This bit of code:</p>
+  <pre class="padded-code"><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;My Favorite Season&lt;/h1&gt;
+  &lt;p&gt;Today, I'd like to share about my favorite season.&lt;/p&gt;
+  &lt;p&gt;There are four seasons in a year.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;spring&lt;/li&gt;
+    &lt;li&gt;summer&lt;/li&gt;
+    &lt;li&gt;fall&lt;/li&gt;
+    &lt;li&gt;winter&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;My favorite season is summer, because I can go to the beach with my family.&lt;/p&gt;
+  &lt;img src="http://images.pinchit.com/deals/2012/04/16/012292aa53_1334616708_550.jpg" alt=""&gt;
+  &lt;p&gt;Click &lt;a href="http://bit.ly/1tOMKwv"&gt;here&lt;/a&gt; to see my favorite sea animal.&lt;/p&gt;   
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <p>will create a web page that looks like this:</p>
+    <img src="https://dl.dropboxusercontent.com/u/4042186/lesson1-sample.png" alt="demo">
+    <p>Check out the <a href="https://d157rqmxrxj6ey.cloudfront.net/jamwave/7089">live demo</a> to experiment yourself.</p>
+    
+    
+<div>
+  <h1>
+    Your Story
+  </h1>
+  <h2>What is your favorite book?</h2>
+  <h3>-OR- What was your favorite activity last summer?  Or favorite sport?</h3> 
+</div>
+
+  <p>Our project today gives you a chance to share one of your interests. As you learn HTML tags today, you will add them to your a page about your favorite things. </p>
+  <p>If you would rather create a page on a different topic, that's ok too.  Please don’t post your full name or address or even school, as these projects will be up on the internet for the whole world to see.</p>
+
+<h2>Getting Started</h2>
+    <p>Start a new project at <a href="thimble.mozilla.org/editor/" target="_blank">thimble.mozilla.org/editor/</a> 
+      <!--
+The HTML section will look like this:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;JS Bin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+-->
+  <p>You should delete all of the sample HTML! We will start with it completely blank.</p>
+
+<h1><a name="html">
+  HTML
+</a></h1>
+    
+  <p>Let’s learn a few tags to use on your web page! Most of the time you will have an opening tag and matching closing tag with some text in between.</p>
+  <p><img src="https://raw.githubusercontent.com/CoderDojoSV/Medallia-Web-Workshop/master/html%20tags%20pic.jpg" width="60%" alt="html tags"></p>
+
+<h3>Heading Tag</h3>
+  <p>
+  The <code>&lt;h1&gt;</code> tag is used to make the text a heading.</p>
+    <pre class="padded-code"><code class="language-html">&lt;h1&gt;My favorite book series is about Harry Potter&lt;/h1&gt;
+</code></pre>
+    <p>Add a heading to your page. Try changing the tag to an <code>&lt;h2&gt;</code> (and don’t forget to change the closing tag to <code>/h2</code>) - what changed? How many heading tags are there?</p>
+    <h3>Paragraph Tag</h3>
+    <p>If you type out text, it will be displayed all on one line. What if you want to break it up into paragraphs? That’s where the <code>&lt;p&gt;</code> tag comes in.</p>
+    <pre class="padded-code"><code class="language-html">&lt;h1&gt;My favorite book series is about Harry Potter&lt;/h1&gt;
+&lt;p&gt;Today, I'd like to tell you about the my favorite book series.&lt;/p&gt;
+&lt;p&gt;It is the book series about Harry Potter, a young wizard who learns magic at Hogwarts, and who everyone hopes will defeat a very bad wizard.&lt;/p&gt;
+</code></pre>
+    <p>Add a couple paragraphs to your web page about your favorite book.</p>
+    
+    <h3>List Tags</h3>
+    <p>You can add a list to your story using <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> tags. Here is an example:</p>
+<pre class="padded-code"><code class="language-html">
+&lt;p&gt;Here are some of my favorite Harry Potter characters.&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Harry Potter (of course)&lt;/li&gt;
+    &lt;li&gt;Hermione&lt;/li&gt;
+    &lt;li&gt;Professor Lupin&lt;/li&gt;
+    &lt;li&gt;Tonks&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+    <p>The <code>&lt;ul&gt;</code> tag (unordered list) tells the browser this is a list of items. The <code>&lt;li&gt;</code> (list item) tags are used around each list item.</p>
+    <p>Add a list to your web page with other books you like, or places you want to go.  What happens if you change the <code>&lt;ul&gt;</code> tag to an <code>&lt;ol&gt;</code>? What do you think that stands for?</p>
+    
+    <h3>What? Tags Within Tags!</h3>
+    <p>Lists are a little tricky because there is one tag within another one. Notice that the <code>&lt;ul&gt;</code> tag comes first and that there are <code>&lt;li&gt;</code> tags within it, before the closing <code>&lt;/ul&gt;</code> tag. This will be used other places too!  Anything you see in a web page is surrounded by a <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> tag.</p>
+    <p>Try adding these tags to your page to see what they do: 
+    <ul>
+      <li><code>&lt;strong&gt;</code><code>&lt;/strong&gt;</code></li>  
+      <li><code>&lt;em&gt;&lt;u&gt;Hi&lt;/u&gt;&lt;/em&gt;</code></li>
+
+    </ul>
+    <p>Remember, they can be within other tags.</p>
+    <pre class="padded-code"><code class="language-html">&lt;p&gt;My favorite book in the series is &lt;u&gt;Harry Potter and the Order of the Phoenix&lt;/u&gt;.&lt;/p&gt;
+&lt;p&gt;It features many of my favorite characters, including &lt;strong&gt;Professor Lupin and Tonks&lt;/strong&gt;&lt;/p&gt;
+</code></pre>
+    
+    <h3>Image Tags</h3>
+    <p>This story would be a lot more interesting with pictures! Adding a picture to our story is simple, we just use the <code>&lt;img&gt;</code> tag and tell it where our image is.</p>
+    <p>The <code>&lt;img&gt;</code> tag has an attribute called <code>src</code> and this is where we tell it the url to the image we want to use in our story. Here is an example <code>&lt;img&gt;</code> tag (notice that you don’t need a closing tag this time--the oldest tags are like that, including <code>&lt;br&gt;</code>):</p>
+    <pre class="padded-code"><code class="language-html">&lt;img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg"&gt;
+</code></pre>
+    <p>What if the image is too big for your page? You can tell it to be a certain size.  Can you guess what px stands for?</p>
+    <pre class="padded-code"><code class="language-html">&lt;img src="https://en.wikipedia.org/wiki/File:Harry_Potter_wordmark.svg" width="350px"&gt;
+</code></pre>
+    <p>Add some images to your web page that have to do with your favorites! Make sure any Google Images Searches have SafeSearch on.</p>
+    
+    <h3>Link Tags</h3>
+    <p>One of the things that makes web pages so amazing for writing about things is you can <strong>link</strong> things together with other web pages on the internet. It is really easy to do!</p>
+    <p>The <code>&lt;a&gt;</code> tag has an attribute called <code>href</code> and we will set that attribute equal to the url of the web page we want to link to.  (H stands for "hyper". HTML stands for Hyper-Text Markup Language, and href stands for the Hyper-reference).  Here is an example where I link the name Harry Potter to the web page about Harry Potter on Wikipedia:</p>
+    <pre class="padded-code"><code>&lt;a href="https://en.wikipedia.org/wiki/Harry_Potter"&gt;Harry Potter&lt;/a&gt;
+</code></pre>
+    <p>Add a link in your web page.  Is there another character you like? Link to a website about them!</p>
+    
+    <h3>Finish Your Web Page</h3>
+    <p>There are more HTML tags to try, but we now have the skills to make an interesting web page.  You can see all these elements on a web page by <a href="https://d157rqmxrxj6ey.cloudfront.net/jamwave/11340">clicking here</a>.  If you want to use it as a starting point for your project, click Remix.Put enough information for your page to be interesting, and next we will learn some CSS to make the page look better!  For now, it should look like this:</p>
+    <img src="https://raw.githubusercontent.com/CoderDojoSV/Intro-Web-Series/master/Day%201/finished%20example.png" width="800px"">
+    
+    
+<h1><a name="css">CSS</a></h1>
+    <p>Next we are going to learn about <a href="http://en.wikipedia.org/wiki/CSS">Cascading Style Sheets</a>,
+      more commonly known as CSS. We are going to use CSS to improve the <em>look
+      and feel</em> of our stories.</p>
+    
+    <h3><a name="What_is_CSS">What is CSS?</a></h3>
+    <p>CSS is a language that can be used to describe how HTML is supposed to look.
+      The important distinction here is that HTML structures the content,
+      while CSS controls how it looks.</p>
+    <p>You need a tiny bit of HTML to ask for your stylesheet.  This is the magic code that you must put in the head section of your html page:</p>
+    <code><strong><pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre></strong></code>
+    <p><em>Let’s look at some CSS:</em></p>
+    <pre class="padded-code"><code class="language-css">body <span class="css-example">{
+  font-family: Arial;
+  background-color: lightblue;
+}</span>
+</code></pre>
+    <p>If you paste the above code into the style.css panel in Thimble, what changes about your website? You might have to click the style.css file on the left side of Thimble page to show the CSS panel.</p>
+    
+    
+    <h3><a name="How_CSS_Works">How CSS Works</a></h3>
+    <p>We can get an idea of what’s happening by looking at each line of the CSS.</p>
+    <ul>
+      <li>For all <code>&lt;body&gt;</code> tags
+        <ol>
+          <li>Use <code>Arial</code> as the font</li>
+          <li>Set the background color to lightblue (<a href="http://www.w3schools.com/html/html_colornames.asp" target="_blank">list of possible colors</a>, next session we will show how to create even more colors)</li>
+        </ol>
+      </li>
+    </ul>
+    <p>CSS follows a basic pattern. First, we select the HTML elements we want to
+      change the look of. Then, we say what aspects of their look we want to change.
+      Take this snippet for example:</p>
+    <pre class="padded-code"><code class="language-css">body <span class="css-example">{
+  font-family: Arial;
+  background-color: lightblue;
+}</span>
+</code></pre>
+    <p>We are selecting all <code>&lt;body&gt;</code> tags (usually there is only one),
+      then saying we want to modify the font and background color.</p>
+    <p>The part that selects the tags is called the <strong>selector</strong>, and each modification
+      is called a <strong>declaration</strong>. A combination of a selector and any number
+      of declarations is called a <strong>rule</strong>. A CSS file can contain as many rules as
+      we want.</p>
+    <p>Let’s break down the concepts of <strong>selectors</strong> and <strong>declarations</strong>.</p>
+    
+    
+    <h3><a name="Selectors">Selectors</a></h3>
+    <p>So far we have seen an example selector for all body tags. How can you make a selector for all paragraph tags? Add it to your project, making the paragraphs have a different background color!</p>
+
+    <h3><a name="Declarations">Declarations</a></h3>
+    <p>Declarations are the style modifications we apply in each CSS rule. There are two parts to each declaration: the <strong>property</strong> and the <strong>value</strong>. The pattern is:</p>
+    <p><code>property: value;</code></p>
+    <p>There are an amazing number of options for declarations in CSS - you can do just about anything you want! But let’s start with just a few. Can you add the following declarations to your page?</p>
+    <pre class="padded-code"><code>font-family: Arial;
+text-align: center;
+color: yellow;
+background-color: skyblue;
+</code></pre>
+
+
+<h1>Putting It All Together!</h1>
+    <p>You can see all these CSS elements applied to the earlier html page by <a href="https://d157rqmxrxj6ey.cloudfront.net/jamwave/11349">clicking here</a>.  If you want to use it as a starting point for your project, click Remix. </p> 
+    <p>Congratulations! You have learned the basics for creating web pages! Use your new skills to complete your page.  When you have an idea for how to improve the appearance, use your favorite search engine to help you learn how!  
+      
+    
+<h2>Make More Web Pages</h2>
+    <p>You read this far, and so great job on your web page today.  Don’t forget that you can refer back here when you want to create more web pages. You can create them for school projects, as birthday cards for family members, or just for fun!</p>
+    
+<h1>Taking it further!</h1>
+    <h2>Take Home Activity:</h2> 
+    <p>There's a fun web game that can help you understand and practice HTML tags. It is at
+<a href="https://eraseallkittens.com/">https://eraseallkittens.com/</a>
+Play it at home.  If you peek at it here, please turn your sound off.</p>
+
+    <h3>Digging Deeper</h3>
+    <p>If you see a web page that looks like what you want, there are many ways you can learn how it is done.  You can right-click and choose "inspect element".  You can view any web page's entire source (in Chrome on Windows, press <code>Ctrl-U</code> and Chrome on Mac, press <code>Cmd-Opt-U</code>).  These are both part of a browser's developer tools (in Chrome on Windows, press <code>Ctrl-Shift-I</code> and Chrome on Mac, press <code>Cmd-Opt-I</code> to open them directly), or even use <a href="https://webmaker.org/en-US/goggles/install">Mozilla's X-ray Goggles</a>.  Feel free to look at how someone else did it and see if you can make the same thing happen!  Some sites like Thimble and codepen.io highly encourage you to learn from examples.</p>
+    
+    <h3>Learning more</h3>
+    <p>If you had fun today and would like to keep learning more HTML and CSS than we will cover in our sessions <a href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Academy has an excellent tutorial.</a></p>
+
+  </body>
+</html>
