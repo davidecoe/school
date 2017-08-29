@@ -22,7 +22,7 @@ body {
     color: white;
     padding: 20px;
     margin: 10px;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .random {
@@ -31,9 +31,13 @@ body {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 50px;
-    padding-right: 60px;
+    padding-right: 80px;
     margin: 10px;
-    max-width: 150px;
+    max-width: 250px;
+    float: left;
+}
+
+.Number1, .Number2, .mynum1, .mynum2, .wins1, .wins2, .losses1, .losses2 {
     float: left;
 }
 
@@ -53,10 +57,10 @@ body {
     clear: both;
 }
 
-.myscore {
+.mynum {
     background-color: turquoise;
     color: black;
-    margin: 10px;
+    margin: 20px;
     max-width: 150px;
     padding: 20px;
 }
@@ -71,7 +75,7 @@ button {
     border: none;
     outline: none;
     overflow: hidden;
-    color: transparent;
+
 }
 
 #amethyst-button {
