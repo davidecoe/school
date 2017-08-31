@@ -1,0 +1,81 @@
+body {
+    background: repeating-linear-gradient(
+        135deg,
+        #9D7F80,
+        #39FA00 10px
+      ); 
+    font-size: 20px;
+}
+
+.title {
+    text-align: center; 
+    max-width: 250px;
+    background-color: darkblue;    
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    }
+
+.instructions {
+    background-color: #2E002E;    
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    max-width: 600px;
+    font-size: 14pt;
+}
+
+.start {
+    background-color: gold;
+    color: purple;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.spic {
+    clear: both;
+    padding: 30px;
+    margin: 10px;
+}
+
+.start-button {
+    width: 200px;
+    height: 100px;
+    font-size: 16pt;
+}
+
+#start2 {
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#start2:hover{
+    background-color: #3D283A;
+}
+
+.start2 {
+    border: 5px solid #B00202;
+    height: 200px;
+    width: 200px;
+    background: green;
+}
+
